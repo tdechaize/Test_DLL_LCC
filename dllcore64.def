@@ -1,0 +1,11 @@
+LIBRARY dllcore64.dll
+exports 
+  _hello=hello
+  _add=add
+  _substract=substract
+  _multiply=multiply
+  _LibMain=LibMain
+
+
+
+

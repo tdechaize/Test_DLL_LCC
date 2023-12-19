@@ -1,0 +1,6 @@
+dllcore.dll
+_LibMain@12		LibMain
+_add		add
+_hello		hello
+_multiply		multiply
+_substract		substract

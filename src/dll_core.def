@@ -1,0 +1,15 @@
+LIBRARY dll_core.dll
+exports
+  _LibMain=LibMain 
+  _Hello=Hello
+  _Addint=Addint
+  _Subint=Subint
+  _Multint=Multint
+  _Divint=Divint
+  _Squarint=Squarint
+  _Adddbl=Adddbl
+  _Subdbl=Subdbl
+  _Multdbl=Multdbl
+  _Divdbl=Divdbl
+  _Squardbl=Squardbl
+

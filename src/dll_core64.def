@@ -1,0 +1,18 @@
+LIBRARY dll_core64.dll
+EXPORTS
+  _Hello=Hello
+  _Addint=Addint
+  _Subint=Subint
+  _Multint=Multint
+  _Divint=Divint
+  _Squarint=Squarint
+  _Adddbl=Adddbl
+  _Subdbl=Subdbl
+  _Multdbl=Multdbl
+  _Divdbl=Divdbl
+  _Squardbl=Squardbl
+  _LibMain=LibMain
+
+
+
+
