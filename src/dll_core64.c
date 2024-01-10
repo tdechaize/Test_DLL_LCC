@@ -57,7 +57,7 @@ BOOL WINAPI LibMain(void 		  *hinstDll,
  
 ------------------------------------------------------------------------*/
 
-int Hello()
+int Hello(void)
  {
     printf( "Hello from a DLL!\n" );
     return( 0 );

@@ -19,11 +19,11 @@ int main(int argc, char** argv)
   Hello();
   printf("----------------------         Lancement des operations arithmetiques avec des entiers            -------------------\n");
   result = Addint(a, b);
-  printf("Le resultat de l'addition de %i plus %i vaut : %i \t(from application with implicit load of DLL %s)\n", a, b, result, argv[0]);
+  printf("Le resultat de l'addition de %i plus %i vaut : %i.\t(from application with implicit load of DLL %s)\n", a, b, result, argv[0]);
   result = Subint(a, b);
-  printf("Le resultat de la soustraction de %i moins %i vaut : %i  (from application with implicit load of DLL %s)\n", a, b, result, argv[0]);
+  printf("Le resultat de la soustraction de %i moins %i vaut : %i. (from application with implicit load of DLL %s)\n", a, b, result, argv[0]);
   result = Multint(a, b);
-  printf("Le resultat de la multiplication de %i par %i vaut : %i (from application with implicit load of DLL %s)\n", a, b, result, argv[0]);
+  printf("Le resultat de la multiplication de %i par %i vaut : %i.(from application with implicit load of DLL %s)\n", a, b, result, argv[0]);
   result = Divint(a, b);
   printf("Le resultat de la division de %i par %i vaut : %i.        (from application with implicit load of DLL %s)\n", a,b,result,argv[0]);
   result = Squarint(b);
@@ -36,7 +36,7 @@ int main(int argc, char** argv)
   result1 = Multdbl(a1, b1);
   printf("La multiplication de %.1f par %.1f vaut %.2f. (from application with implicit load of DLL %s)\n", a1,b1,result1,argv[0]);
   result1 = Divdbl(a1, b1);
-  printf("La division de %.1f par %.1f vaut %.5f.        (from application with implicit load of DLL %s)\n", a1,b1,result1,argv[0]);
+  printf("La division de %.1f par %.1f vaut %.5f.      (from application with implicit load of DLL %s)\n", a1,b1,result1,argv[0]);
   result1 = Squardbl(b1);
   printf("Le carre de %.1f par %.1f vaut %.2f. \t       (from application with implicit load of DLL %s)\n", b1,b1,result1,argv[0]);	
   

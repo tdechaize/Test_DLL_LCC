@@ -33,6 +33,9 @@ if 'BC55' in sys.argv[1]  or 'PELLESC64' in sys.argv[1] or 'OW32' in sys.argv[1]
     print(f"La difference de 42 moins 7 vaut {mydll._Subint(42, 7)}. (from script python {sys.argv[0]})")
     mydll._Multint.argtypes = [ctypes.c_int, ctypes.c_int]
     print(f"La multiplication de 42 par 7 vaut {mydll._Multint(42, 7)}. (from script python {sys.argv[0]})")
+    mydll._Divint.argtypes = [ctypes.c_int, ctypes.c_int]
+    mydll._Divint.restype = ctypes.c_int
+    print(f"La division de 42 par 7 vaut {mydll._Divint(42,7)}.          (from script python {sys.argv[0]})")
     mydll.Squareint.argtypes = [ctypes.c_int]
     print(f"Le carre de 7 par 7 vaut {mydll._Squarint(7)}. (from script python {sys.argv[0]})")
     print(f"----------------------    Lancement des operations arithmetiques avec des doubles flottants   ---------------------");
@@ -45,6 +48,9 @@ if 'BC55' in sys.argv[1]  or 'PELLESC64' in sys.argv[1] or 'OW32' in sys.argv[1]
     mydll._Multdbl.argtypes = [ctypes.c_double, ctypes.c_double]
     mydll._Multdbl.restype = ctypes.c_double
     print(f"La multiplication de 16.9 par 7.3 vaut {mydll._Multdbl(16.9, 7.3)}. (from script python {sys.argv[0]})")
+    mydll._Divdbl.argtypes = [ctypes.c_double, ctypes.c_double]
+    mydll._Divdbl.restype = ctypes.c_double
+    print(f"La division de 16.9 par 7.3 vaut {"{0:g}".format(mydll._Divdbl(16.9, 7.3))}.             (from script python {sys.argv[0]})")
     mydll._Squardbl.argtypes = [ctypes.c_double]
     mydll._Squardbl.restype = ctypes.c_double
     print(f"Le carre de 7.3 par 7.3 vaut {mydll._Squardbl(7.3)}. (from script python {sys.argv[0]})")
